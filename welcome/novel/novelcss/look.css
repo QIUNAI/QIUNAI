@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#box2t{
+width:100%;
+height:300px;
+}
+#box2b{
+width:100%;
+height:1110px;
+}
+#box2bl{
+width:30%;
+float:left;
+}
+#box2br{
+width:70%;
+height:1110px;
+float:right;
+}
+#if1{
+width:100%;
+height:1110px;
+}
+#bt1{
+font-size:274px;
+}
+#bt2{
+font-size:274px;
+}
+#bt3{
+font-size:274px;
+}
+a {
+    text-decoration: none;
+    font-size:20px;
+}
