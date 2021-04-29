@@ -1,0 +1,21 @@
+@charset "UTF-8";
+#box2{
+height:400px;
+}
+#box2-1{
+width:150px;
+height:150px;
+float:left;
+}
+#box2l{
+width:15%;
+float:left;
+color:red;
+font:30px auto;
+}
+#box2r{
+width:15%;
+float:right;
+color:red;
+font:30px auto;
+}
