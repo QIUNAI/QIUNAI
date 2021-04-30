@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../musiccss/justinbieber.css">
+<link rel="stylesheet" href="../musiccss/purpose.css">
+<script type="text/javascript" src="../musicjs/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+<script type="text/javascript" src="../musicjs/album.js"></script>
+<script type="text/javascript" src="../musicjs/justice.js"></script>
+<style type="text/css">
+#box2l{
+color:gray;
+width:100%;
+color:#16c593;
+text-align: center;
+}
+.box ul li:hover p {
+    color:#e6f408;
+}
+</style>
+<script type="text/javascript">
+$(function() {
+
+	// fix main menu to page on passing
+	$('.main.menu').visibility({
+		type : 'fixed'
+	});
+	$('.overlay').visibility({
+		type : 'fixed',
+		offset : 60
+	});
+
+	// lazy load images
+	$('.image').visibility({
+		type : 'image',
+		transition : 'vertical flip in',
+		duration : 500
+	});
+
+	// show dropdown on hover
+	$('.main.menu  .ui.dropdown').dropdown({
+		on : 'hover'
+	});
+});
+</script>
+</head>
+<body>
+<img height="100%" width="100%" src="../musicsourse/b89.jpeg">
+<div class="ui  borderless  main menu">	
+		<div class="ui text container">
+			<a href="../welcome.html" class=" ui left floated dropdown item">首页</a> <a href="../novel/moodsign.html"
+				class="ui left floated dropdown item"> 萘文录 </a>
+				
+				<a href="../justinbieber.html" class="ui left floated dropdown item">音乐 </a>
+				<a href="../image/image.html" class="ui left floated dropdown item">图片</a>
+				<a href="moodsign.html" class="ui left floated dropdown item">视频 </a>
+				 <a href="moodsign.html" class="ui left floated dropdown item">游戏</a>
+				  <a href="QNMP.html" class="ui left floated dropdown item">QNMP</a>
+				   <a href="music.html" class="ui left floated dropdown item">music</a>
+				 
+		</div>
+	</div>
+		<div id="box2">
+		<div id="box2l">JUSTICE</div>
+			<div class="box">
+        <ul>
+            <li ><img id="img1" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>off my face</p>
+            </li>
+             <li><img id="img2" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>angels speak</p>
+            </li>
+             <li><img id="img3" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>die for you</p>
+            </li>
+            <li ><img id="img4" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>love you different</p>
+            </li> 
+            <li><img id="img5" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>i can't be myself</p>
+            </li>
+            <li><img id="img6" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>peaches</p>
+            </li>
+            <li><img id="img7" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>peaches</p>
+            </li>
+            <li><img id="img8" height=300px width=300px  src="../musicsourse/justice.jpg">
+                <p>peaches</p>
+            </li>
+        </ul>
+    </div>
+		</div>
+<div id="box3"></div>
+
+</body>
+</html>
