@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>qiunaiimage</title>
+<script type="text/javascript" src="imagejs/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var name=["yingdao","水源千鹤","oynn"];
+	var imgsrc=["imagesourse/yingdao.jpg","imagesourse/水源千鹤.png","imagesourse/oynn.jpg"];
+	$("#bt1").click(function(){
+		if($("#name").val()==name[0])
+		{
+		document.getElementById("imagebox").innerHTML="<img  src="+imgsrc[0]+">";
+		}
+		else if($("#name").val()==name[1])
+		{
+			document.getElementById("imagebox").innerHTML="<img  src="+imgsrc[1]+">";
+		}
+		else if($("#name").val()==name[2])
+		{
+			document.getElementById("imagebox").innerHTML="<img  src="+imgsrc[2]+">";
+		}
+		else if($("#name").val()=="")
+		{
+		alert("请填写姓名");
+		}
+		else{
+			alert("请填写正确的姓名");
+		}
+	});
+	$("#bt2").click(function(){
+		$("#name").val("");
+		$("img").remove();
+	});
+});
+</script>
+</head>
+<body>
+<div id="box" style="width:80%;height:100px;float:left">
+<div class="ui input" style="position:fliexd;left:50px;margin:20px;width:50%">
+  <input id="name"   type="text" placeholder="请输入要查询的照片（提示：姓名）">
+  <button id="bt1" class="ui button green">查询</button><button id="bt2" class="ui button red">取消</button>
+</div>
+</div>
+<div id="imagebox"></div>
+</body>
+</html>
