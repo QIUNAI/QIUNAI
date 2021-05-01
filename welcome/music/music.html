@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>music</title>
-<script type="text/javascript" src="../js/jquery3.5.1.js"></script>
+<script type="text/javascript" src="musicjs/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 <style type="text/css">
 li{
 list-style:none;
@@ -13,15 +15,50 @@ background-color:pink;
 height:150px;
 margin:10px;
 text-align:center;
+font-size:30px;
+border-radius:30px;
 }
 li:hover{
 width:100%;
 transition:all .5s;
 }
+a{text-decoration:none;
+font-size:30px;
+} 
 </style>
 <script type="text/javascript">
 $(function(){
-	var arr=["musicsourse/song/Lil Chaos - 失眠.mp3","musicsourse/song/Luis Fonsi _ Daddy Yankee _ Justin Bieber - Despacito (Remix).mp3","musicsourse/song/于果 - 侧脸 [mqms2].mp3","musicsourse/song/等什么君 - 赤伶.mp3","musicsourse/song/程响 - 世界这么大还是遇见你.mp3","musicsourse/song/WANDS (ワンズ) - 世界が終るまでは… (直到世界尽头) [mqms2].mp3"];
+	var arr=["musicsourse/song/陈粒 - 桥豆麻袋.mp3",
+		"musicsourse/song/Luis Fonsi _ Daddy Yankee _ Justin Bieber - Despacito (Remix).mp3",
+		"musicsourse/song/Shawn Mendes- Señorita.mp3",
+		"musicsourse/song/等什么君 - 赤伶.mp3",
+		"musicsourse/song/程响 - 世界这么大还是遇见你.mp3",
+		"musicsourse/song/R7CKY - 夢燈籠 (R7CKY 你的名字 Mix).mp3",
+		"musicsourse/song/原来是萝卜丫 - 是心动啊 (Cover：iu _ High4).mp3",
+		"musicsourse/song/封茗囧菌 - 东京不太热.mp3",
+		"musicsourse/song/茶太 - 海に行く.mp3",
+		"musicsourse/song/阿信 - 一半人生.mp3",
+		"musicsourse/song/Tyron Hapi,Bianca - Lost Control (Original Mix).mp3",
+		"musicsourse/song/Tanir _ Tyomcha - Да да да (Jarico Remix).mp3",
+		"musicsourse/song/superluckyqi - 一点点（Cover：唧唧JIJI）.mp3",
+		"musicsourse/song/Sou - 心做し.mp3",
+		"musicsourse/song/Sofia Jannok - Liekkas.mp3",
+		"musicsourse/song/Shawn Mendes - Stitches.mp3",
+		"musicsourse/song/Selena Gomez - Lose You To Love Me.mp3",
+		"musicsourse/song/Lovestoned - Bye Bye Bye.mp3",
+		"musicsourse/song/koka - Wrap Me in plastic（cover：CHROMANCE）.mp3",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/",
+		"musicsourse/song/"];
 	$(".li1").click(function(){
 		document.getElementById("audio").innerHTML="<audio src='"+arr[0]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
 	});
@@ -40,23 +77,76 @@ $(function(){
 	$(".li6").click(function(){
 		document.getElementById("audio").innerHTML="<audio src='"+arr[5]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
 	});
+	$(".li7").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[6]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li8").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[7]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li9").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[8]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li10").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[9]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li11").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[10]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li12").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[11]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li13").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[12]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li14").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[13]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li15").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[14]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li16").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[15]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li17").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[16]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li18").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[17]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	$(".li19").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[18]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+	
+	$("#a1").attr('href',arr[1]);
 });
 </script>
 </head>
 <body>
 <div id="leftbox" style="width:70%;height:100vm">
-<a href="musicsourse/song/Lil Chaos - 失眠.mp3" download="失眠.mp3">点击下载失眠.mp3</a>
+<div class="ui input" style="position:fliexd;left:50px;margin:20px">
+  <input id="count"  type="text" placeholder="填写歌曲序号"><a id="a1" href="#" download="filename">下载</a>
+</div>
+
 <ul style="width:100%">
-<li class="li1">失眠</li>
-<li class="li2">Despacito (Remix)</li>
-<li class="li3">于果 - 侧脸</li>
-<li class="li4">等什么君 - 赤伶</li>
-<li class="li5">程响 - 世界这么大还是遇见你</li>
-<li class="li6">WANDS (ワンズ) - 世界が終るまでは… (直到世界尽头)</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li class="li1">陈粒 - 桥豆麻袋<br></li>
+<li class="li2">JustinBieber-Despacito</li>
+<li class="li3">Shawn Mendes-Señorita</li>
+<li class="li4">等什么君-赤伶</li>
+<li class="li5">程响-世界这么大还是遇见你</li>
+<li class="li6">R7CKY - 夢燈籠 </li>
+<li class="li7">原来是萝卜丫 - 是心动啊</li>
+<li class="li8">封茗囧菌 - 东京不太热</li>
+<li class="li9">茶太 - 海に行く</li>
+<li class="li10">阿信 - 一半人生</li>
+<li class="li11">Tyron Hapi,Bianca - Lost Control</li>
+<li class="li12">Tanir _ Tyomcha - Да да да</li>
+<li class="li13">superluckyqi - 一点点</li>
+<li class="li14">Sou - 心做し</li>
+<li class="li15">Sofia Jannok - Liekkas</li>
+<li class="li16">Shawn Mendes - Stitches</li>
+<li class="li17">Selena Gomez - Lose You To Love Me</li>
+<li class="li18">Lovestoned - Bye Bye Bye</li>
+<li class="li19">koka - Wrap Me in plastic</li>
 </ul>
 </div>
 <div id="audio"></div>
