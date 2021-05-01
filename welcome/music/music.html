@@ -12,6 +12,7 @@ float:left;
 background-color:pink;
 height:150px;
 margin:10px;
+text-align:center;
 }
 li:hover{
 width:100%;
@@ -36,18 +37,22 @@ $(function(){
 	$(".li5").click(function(){
 		document.getElementById("audio").innerHTML="<audio src='"+arr[4]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
 	});
+	$(".li6").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[5]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
 });
 </script>
 </head>
 <body>
-<div id="leftbox" style="width:50%;height:100vm">
+<div id="leftbox" style="width:70%;height:100vm">
+<a href="musicsourse/song/Lil Chaos - 失眠.mp3" download="失眠.mp3">点击下载失眠.mp3</a>
 <ul style="width:100%">
-<li class="li1"></li>
-<li class="li2"></li>
-<li class="li3"></li>
-<li class="li4"></li>
-<li class="li5"></li>
-<li class="li6"></li>
+<li class="li1">失眠</li>
+<li class="li2">Despacito (Remix)</li>
+<li class="li3">于果 - 侧脸</li>
+<li class="li4">等什么君 - 赤伶</li>
+<li class="li5">程响 - 世界这么大还是遇见你</li>
+<li class="li6">WANDS (ワンズ) - 世界が終るまでは… (直到世界尽头)</li>
 <li></li>
 <li></li>
 <li></li>
