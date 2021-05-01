@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>music</title>
+<script type="text/javascript" src="../js/jquery3.5.1.js"></script>
+<style type="text/css">
+li{
+list-style:none;
+width:50%;
+float:left;
+background-color:pink;
+height:50px;
+margin:10px;
+}
+li:hover{
+width:100%;
+transition:all .5s;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	var arr=["musicsourse/song/Lil Chaos - 失眠.mp3"];
+	$(".li1").click(function(){
+		document.getElementById("audio").innerHTML="<audio src='"+arr[0]+"' autoplay='autoplay' loop='loop' hidden='true'></audio> ";
+	});
+});
+</script>
+</head>
+<body>
+<div id="leftbox" style="width:50%;height:100vm">
+<ul style="width:100%">
+<li class="li1"></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<div id="audio"></div>
+</body>
+</html>
